@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/92c6611217.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/GautamLogo.png"  class="logo" alt="it my logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer using React Js</p>
+                <h1>Hi , I'm <span>Gautam</span> <br></h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -------------------------------------------ABOUT----------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/bg2.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am third year graduate pursuing B.Tech in Computer Science, diligent and curious student with a strong interest in computer science and technology and I am a quick learner and always seeks to expand my knowledge and expertise in the field. With a keen eye for detail and a passion for innovation. I am committed to excellence in my work, hardworking and ambitious individual as always willing to go the extra mile to achieve the goals. In my free time, I enjoys exploring new technologies and taking on coding challenges to sharpen my skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Language</span><br>I am quite good in c, c++,python, java </li>
+                            <li><span>Web Development</span><br>HTML5,css3,javascript,ReactJs,Bootstrap5,PHP,Mysql,sql <br></li>
+                            <li><span>App Development/Android Development</span><br>Building Android/ios apps <br>I'm quite Good in Android studio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-current</span><br>President At codechef in AGC Coding Chapter<br>Working as Freelancer in Parttime</li>
+                            <li><span>2021-2022</span><br> 6th-Week Training at vmm institute in Java</li>
+                            <li><span>2019-2021</span><br>Training in UI/UX in figma</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>Matriculation board from Modern Academy</li>
+                            <li><span>2018</span><br>Intermediate borad from Gaya College Gaya</li>
+                            <li><span>2020</span><br>B.Tech in CSE from Amritsar Group of colleges</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------- services-------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>As a web developer, I am skilled in designing and developing websites, creating user-friendly interfaces, and ensuring website functionality. My expertise in programming languages such as HTML, CSS, JavaScript, PHP and React Js allows me to build responsive and dynamic websites that meet clients' needs and exceed their expectations</p>
+                    <a href="https://github.com/Gautam097" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>React Js Developer</h2>
+                    <p>As a React JS developer, I have expertise in building user interfaces for web applications using the React JS library. I am proficient in JavaScript, HTML, and CSS and have experience in using various tools and technologies such as Node.js, Redux, and Webpack to develop high-quality and efficient applications. My ability to think logically and solve complex problems enables you to design responsive and user-friendly interfaces that meet clients' requirements. I also have experience in integrating APIs, debugging, and testing applications to ensure they meet industry standards. My dedication to staying up-to-date with the latest trends and advancements in technology ensures that I deliver cutting-edge and innovative solutions to clients.</p>
+                    <a href="https://github.com/Gautam097" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <!-- These all icons comes from fontawesome website after making id on this -->
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>As an Android developer, I possess a deep understanding of the Android operating system and its development environment. I'm proficient in Java and Kotlin programming languages and have expertise in using Android Studio and other development tools to create high-quality mobile applications. My ability to think creatively and outside the box enables me to come up with innovative solutions to complex problems. My experience in designing user interfaces, integrating APIs, and optimizing app performance helps me build user-friendly and responsive apps that meet clients' requirements. I stay up-to-date with the latest industry trends and best practices, ensuring that our apps are cutting-edge and ahead of the competition.</p>
+                    <a href="https://github.com/Gautam097" target="_blank">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>I have create whatApp clone with help of java on Android Studio. The app connects you to the talented people around the world. Download it from play store.</p>
+                        <a href="https://github.com/Gautam097"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+
+                    <div class="layer">
+                        <h3>Fee Management system <br> And Point of Sale</h3>
+                        <p>Using Java, I have created a Fee Management System and a Point of Sale (POS) application. The Fee Management System enables educational institutions to manage student fees, generate invoices, and keep track of payments. The POS system helps businesses manage sales, inventory, and customer transactions efficiently. Both applications are user-friendly, reliable, and designed to meet the specific needs of their respective users.</p>
+                        <a href="https://github.com/Gautam097"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+
+                    <div class="layer">
+                        <h3>Ecommerce website</h3>
+                        <p>I have created an ecommerce website using a combination of HTML, CSS, JavaScript, React JS, PHP, and Node.js. The website features a user-friendly interface, responsive design, and seamless navigation. With the help of PHP and Node.js, you have integrated secure payment gateways and inventory management systems. My attention to detail and use of the latest technologies ensure a smooth shopping experience for customers.</p>
+                        <a href="https://github.com/Gautam097"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+
+    <!-- ---------------------------contact ------------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>gautamcse097@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-phone"></i>6205453090</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Gautam097" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://twitter.com/Ranbir74139071" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tech_gautam_1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/gautam-kumar-145351237" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/gautamresume.pdf"download  class="btn btn2" target="_blank ">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+
+                        <input type="text" name="Name" placeholder="Your Name " required>
+                        <input type="email" name="Email" placeholder="Your Email " required>
+                        <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>                   
+
+                    </form>
+                    <span id="msg"></span>
+                
+                </div>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Gautam.<i class="fa-solid fa-heart"></i> Made with by Tech Gautam</p>
+        </div>
+    </div>
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+
+    <script>
+        var sidemeu =document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzzSHXyc6p2Xi_rRt1afNirHgZFn3ucgN2EUGHYWty9p9t1tcCZc9WmZ3SPFAU0Hzon4g/exec';
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+    <!-- sheet url -->
+    <!-- 1.web app -->
+    <!-- https://script.google.com/macros/s/AKfycbzzSHXyc6p2Xi_rRt1afNirHgZFn3ucgN2EUGHYWty9p9t1tcCZc9WmZ3SPFAU0Hzon4g/exec -->
+
+    <!-- 2.Deployment id -->
+    <!-- AKfycbzzSHXyc6p2Xi_rRt1afNirHgZFn3ucgN2EUGHYWty9p9t1tcCZc9WmZ3SPFAU0Hzon4g -->
+
+    <!-- 3. spreadsheet url  -->
+    <!-- https://docs.google.com/spreadsheets/d/1_vOF_gm48GDC5MUjkbqurwXSPDF5hh79OkBhOsiDJZY/edit#gid=0 -->
+</body>
+</html>
